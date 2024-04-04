@@ -1,0 +1,48 @@
+@import "colors";
+header {
+  padding: 22px 16px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  place-content: center space-between;
+  z-index: 7;
+
+  img {
+    object-fit: contain;
+  }
+  i {
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+  }
+  .miniCart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    .productQuantity {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: $primaria;
+      bottom: 5px;
+      right: 0;
+      display: flex;
+      border-radius: 50px;
+      place-content: center;
+
+      color: white;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 22px 40px;
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    padding: 22px 162px;
+  }
+}

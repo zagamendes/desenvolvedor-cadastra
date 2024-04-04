@@ -1,0 +1,50 @@
+@import "colors";
+.containerShelf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 162px;
+
+  align-items: center;
+
+  row-gap: 10px;
+  strong.product-name {
+    font-size: 14px !important;
+    color: $preto !important;
+  }
+  p {
+    margin: 0;
+    color: $preto;
+  }
+  .installments {
+    color: $cinza2;
+  }
+  .price {
+    font-weight: 700;
+  }
+  img {
+    width: 100%;
+  }
+  button.btn-comprar {
+    width: 100%;
+    background-color: $preto;
+    color: white;
+    padding: 7px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.1s;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $cinza;
+    }
+  }
+}
+.disabled-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: not-allowed !important;
+}
+@media (min-width: 1024px) {
+  .containerShelf {
+    flex-basis: 195px;
+  }
+}

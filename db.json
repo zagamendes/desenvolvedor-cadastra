@@ -91,53 +91,93 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
+      "id": "10",
+      "name": "produto 10",
       "price": 99.0,
       "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_10.png",
+      "image": "/img/img_2.png",
       "size": ["M"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
+      "id": "11",
+      "name": "Produto 11",
       "price": 99.0,
       "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_10.png",
+      "image": "/img/img_3.png",
+      "size": ["M", "GG", "42"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "12",
+      "name": "Produto 12",
+      "price": 23.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_4.png",
       "size": ["M"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
-      "price": 99.0,
+      "id": "13",
+      "name": "Produto 13",
+      "price": 220,
       "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_10.png",
-      "size": ["M"],
+      "image": "/img/img_6.png",
+      "size": ["34", "40"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
+      "id": "14",
+      "name": "Produto 14",
       "price": 99.0,
       "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_10.png",
-      "size": ["M"],
+      "image": "/img/img_7.png",
+      "size": ["P"],
       "date": "2003-12-17"
     },
     {
-      "id": "9",
-      "name": "Pochete Clutch",
-      "price": 99.0,
+      "id": "15",
+      "name": "Produto 15",
+      "price": 180.0,
       "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_10.png",
-      "size": ["M"],
+      "image": "/img/img_2.png",
+      "size": ["P", "G"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "16",
+      "name": "Produto 16",
+      "price": 240.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_6.png",
+      "size": ["P", "G"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "17",
+      "name": "Produto 17",
+      "price": 120.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_9.png",
+      "size": ["P", "G", "GG"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "18",
+      "name": "Produto 18",
+      "price": 120.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_5.png",
+      "size": ["P", "G", "GG"],
       "date": "2003-12-17"
     }
   ]

@@ -10,12 +10,15 @@ module.exports = (paths) => ({
     filename: "bundle.js",
   },
   mode: "development",
+  resolve: {
+    extensions: [".ts", ".js"], // Extensões de arquivo que o Webpack deve reconhecer
+  },
   module: {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /(node_modules|bower_components)/,
-        include: path.resolve(__dirname, paths.scripts.src),
+        include: path.resolve(__dirname, "src"),
         use: "ts-loader",
       },
     ],

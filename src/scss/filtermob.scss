@@ -1,0 +1,135 @@
+@import "colors";
+#filtroMob {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: all 0.2s;
+  background-color: white;
+  .filter-header,
+  .filterItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #666666;
+    font-size: 28px;
+    padding: 16px;
+    text-transform: uppercase;
+    color: $cinza2;
+  }
+  .filter-header button,
+  .filterItem button {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    transition: all 0.2s;
+  }
+  .menu {
+    height: 57px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  .menu-active {
+    .filterItem {
+      button {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .filterItem {
+    border: none;
+    font-size: 24px;
+    button {
+      font-size: 20px;
+    }
+  }
+
+  .filterContent,
+  .filterSize {
+    padding: 0 16px;
+  }
+
+  .filterContent {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    li {
+      display: flex;
+      column-gap: 5px;
+      align-items: center;
+      text-transform: capitalize;
+      font-size: 18px;
+      input {
+        accent-color: $primaria;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .filterSize {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 153px;
+    gap: 8px;
+    flex-direction: row;
+    button {
+      width: 32px;
+      height: 32px;
+      background-color: transparent;
+      color: $cinza;
+      border: 1px solid $cinza;
+      font-size: 16px;
+    }
+  }
+  .ctn-btn-filter-control {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    column-gap: 23px;
+    button {
+      background-color: white;
+      width: 100%;
+      padding: 8px 20px;
+      text-transform: uppercase;
+      border: 1px solid $cinza2;
+      color: $cinza2;
+      &:first-child {
+        background-color: $primaria;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
+
+.ctnFilterButtons {
+  display: flex;
+  button {
+    padding: 8px 53px;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid $cinza2;
+    color: $cinza2;
+    font-size: 24px;
+  }
+  #btnFiltrar {
+    border-right: none;
+  }
+}
+
+.showFiltro {
+  left: 0 !important;
+  font-size: 24px;
+}
+.size-selected {
+  border-color: $primaria !important;
+  color: black !important;
+}
+@media (min-width: 768px) {
+  .ctnFilterButtons {
+    display: none !important;
+  }
+}

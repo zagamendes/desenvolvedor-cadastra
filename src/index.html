@@ -1,19 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor Cadastra</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor Cadastra</title>
-  <link rel="stylesheet" href="main.css" />
-</head>
+  <body>
+    <header>
+      <a href="/"><img src="./img/logo.png" /></a>
+      <div class="miniCart" role="button" id="abrir-mini-cart">
+        <i class="fas fa-shopping-bag"></i>
+        <div class="productQuantity">5</div>
+      </div>
+    </header>
+    <div class="fullContainer">
+      <div class="ctn-title-order-by">
+        <strong>Blusas</strong>
+        <div id="orderBy">
+          <button class="order-by-desktop">
+            Ordenar por: <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="ctn-order-by-options">
+            <button class="btn-orderby" data-type="_sort=date&_order=desc">
+              Mais recente
+            </button>
+            <button class="btn-orderby" data-type="_sort=price&_order=desc">
+              Maior preço
+            </button>
+            <button class="btn-orderby" data-type="_sort=price">
+              Menor preço
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Menu mob -->
 
-<body>
+      <div id="filtroMob">
+        <div class="filter-header">
+          <p>Filtrar</p>
+          <button id="closeFilter">&times</button>
+        </div>
+        <div>
+          <div class="menu">
+            <div class="filterItem">
+              <p>Cores</p>
+              <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <ul class="filterContent filterColors" id="colors-mob"></ul>
+          </div>
+          <div class="menu">
+            <div class="filterItem">
+              <p>Faixa de preço</p>
+              <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <ul
+              class="filterContent filter-by-price"
+              id="filter-by-price-mob"
+            ></ul>
+          </div>
+          <div class="menu">
+            <div class="filterItem">
+              <p>Tamanho</p>
+              <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="filterContent filterSize"></div>
+          </div>
+        </div>
+        <div class="ctn-btn-filter-control">
+          <button id="apply-filters">Aplicar</button>
+          <button id="clear-filters">Limpar</button>
+        </div>
+      </div>
+      <!-- Fim menu mob -->
 
-</body>
-<h1>Desafio Cadastra</h1>
+      <!-- Order by mob -->
+      <div id="orderby-mob">
+        <div class="orderby-header">
+          <p>Ordernar</p>
+          <button id="btnCloseOrderBy">&times</button>
+        </div>
+        <div class="orderby-options">
+          <button class="btn-orderby" data-type="_sort=date&_order=desc">
+            Mais recente
+          </button>
+          <button class="btn-orderby" data-type="_sort=price&_order=desc">
+            Maior preço
+          </button>
+          <button class="btn-orderby" data-type="_sort=price">
+            Menor preço
+          </button>
+        </div>
+      </div>
+      <!-- Fim Order by mob -->
 
-<script src="bundle.js"></script>
-
+      <!-- botões mob para filtros -->
+      <div class="ctnFilterButtons">
+        <button class="filtrar" id="btnFiltrar">Filtrar</button>
+        <button class="btn-ordernar" id="btnOrdenar">Ordenar</button>
+      </div>
+      <!-- fim botões mob para filtros -->
+      <div class="ctn-content-desktop">
+        <!-- Filtro desktop -->
+        <aside class="containerFiltro">
+          <div id="filter-colors-desk">
+            <p>Cores</p>
+            <ul class="filterColors" id="colors-desk"></ul>
+          </div>
+          <div>
+            <p>Tamanho</p>
+            <div
+              class="filterContent filterSize"
+              id="filter-by-size-desk"
+            ></div>
+          </div>
+          <div>
+            <p>Faixa de preço</p>
+            <ul
+              class="filterContent filter-by-price"
+              id="filter-by-price-desk"
+            ></ul>
+          </div>
+        </aside>
+        <!-- Fim Filtro desktop -->
+        <main class="main">
+          <div id="search-result"></div>
+          <button id="btn-fetch-more">Carregar mais</button>
+        </main>
+      </div>
+    </div>
+    <aside id="mini-cart">
+      <div class="ctn-header-carrinho">
+        <p>Carrinho</p>
+        <button id="close-mini-cart"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="mini-cart-content"></div>
+    </aside>
+    <footer>CADASTRA: Implantação de E-commerce VTEX</footer>
+  </body>
+  <script src="bundle.js"></script>
 </html>
