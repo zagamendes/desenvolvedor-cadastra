@@ -30,7 +30,7 @@ body {
   }
   .ctn-title-order-by {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .ctn-content-desktop {
     display: flex;
@@ -76,6 +76,9 @@ footer {
 @media (min-width: 768px) {
   .fullContainer {
     padding: 0 20px;
+    .ctn-title-order-by {
+      justify-content: space-between;
+    }
     .main {
       column-gap: 10px;
     }

@@ -1,5 +1,12 @@
 # O projeto 🖥️
 
+<table>
+  <tr>
+    <td valign="top"><img src="./desktop.png" /></td>
+    <td valign="top"><img src="./mob.png" width=50%/></td>
+  </tr>
+</table>
+
 Para rodar o projeto primeiro é preciso instalar as dependecias usando `npm i` ou `yarn install`. Feito isso basta executar o comando `npm run start` ou `yarn start`
 
 ## Features feitas 📋
